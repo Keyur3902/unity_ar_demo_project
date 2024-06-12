@@ -1,16 +1,25 @@
-# unity_ar_demo_project
+# Flutter View in AR
 
-A new Flutter project.
+This project integrates a Unity AR model into a Flutter application using the flutter_unity plugin. The objective is to visualize a 3D model in the real world using Augmented Reality (AR) capabilities provided by Unity.
 
-## Getting Started
+## Installation
+Just Export the unityExport folder provided in the link below under the android folder of your project.
 
-This project is a starting point for a Flutter application.
+[Unity Export Link](https://drive.google.com/drive/folders/1dQXHs69KQoyN7ZodJJw_Zf8K4nMaQP_i?usp=sharing)
 
-A few resources to get you started if this is your first Flutter project:
+After adding this to your project run the below command in your terminal
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+flutter pub run flutter_unity:unity_export_transmogrify
+```
+Include code inside <your_flutter_project>/android/unityExport/build.gradle
+```
+buildTypes {
+    profile {}
+}
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Additional Resource
+
+[Flutter unity package](https://pub.dev/packages/flutter_unity)
+
